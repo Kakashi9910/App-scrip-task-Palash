@@ -1,6 +1,6 @@
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import styles from './Filters.module.css'
 import { useState } from 'react';
 

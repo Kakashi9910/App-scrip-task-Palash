@@ -9,9 +9,9 @@ export default function FilterSetting({setHideFilter}:{setHideFilter:any}) {
         <div className={styles.hideFilterTab} onClick={()=>setHideFilter((prev:boolean) => !prev) }> <p className={styles.hideFilterTabPara}>Hide Filter</p></div>
         <div className={styles.dropdown} ><button className={styles.dropbtn}>Recommended</button>
             <div className={styles.dropdownContent}>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <div>Link 1</div>
+                <div>Link 2</div>
+                <div>Link 3</div>
             </div></div>
     </div>
 }
