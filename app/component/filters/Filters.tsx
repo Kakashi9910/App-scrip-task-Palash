@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import styles from './Filters.module.css'
