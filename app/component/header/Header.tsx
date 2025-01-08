@@ -6,7 +6,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.upperHeader}>
                 <div className={styles.logo}>
-                    <a href="/">MyShop</a>
+                    <div >MyShop</div>
                 </div>
                 <h1>Logo</h1>
                 <div className={styles.actions}>
@@ -30,18 +30,19 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <ul>
                         <li>
-                            <a href="/products">Products</a>
+                            <div>Products</div>
                         </li>
                         <li>
-                            <a href="/about">About</a>
+                            <div>About</div>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
+                            <div>Contact</div>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
-                        </li>                        <li>
-                            <a href="/contact">Contact</a>
+                            <div>Contact</div>
+                        </li>                        
+                        <li>
+                            <div>Contact</div>
                         </li>
                     </ul>
                 </nav>
