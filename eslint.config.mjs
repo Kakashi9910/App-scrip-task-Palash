@@ -9,8 +9,16 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+// Get the base ESLint config from Next.js core and TypeScript
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
+
+// Add custom rules here
+eslintConfig.push({
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off", // Disable the rule for 'any' type
+  },
+});
 
 export default eslintConfig;
