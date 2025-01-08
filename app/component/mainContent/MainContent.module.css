@@ -1,0 +1,28 @@
+
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr 3fr; /* Two columns for the second row (1:3 ratio) */
+    gap: 10px; /* Optional: Gap between rows and columns */
+    padding: 20px;
+    margin: 20px;
+}
+.gridContainerHideFilter {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 0fr 4fr; /* Two columns for the second row (1:3 ratio) */
+    gap: 10px; /* Optional: Gap between rows and columns */
+    padding: 20px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+        .gridContainer {
+            grid-template-columns: 0fr 1fr; /* Remove the first column, let the second column take full space */
+        }
+    }
+  
+
+  
