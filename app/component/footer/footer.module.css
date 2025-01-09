@@ -72,3 +72,28 @@
     width: 90%;
     margin: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .upperSection {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .upperLeft {
+        width: 100%;
+    }
+    .searchBar {
+        width: 50%;
+
+    }
+    .upperRight div {
+        margin-left: 1rem;
+    }
+    .upperRight div:last-child{
+        display: none;
+    }
+
+    .upperRight div p:last-child {
+        display: none;
+    }
+
+}
