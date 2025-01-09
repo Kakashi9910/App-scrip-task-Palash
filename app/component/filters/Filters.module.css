@@ -30,6 +30,8 @@
     border-bottom: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5;;
   }
+
+
   
   /* Hover effect for sidebar links and buttons */
   .sidenav a:hover,
@@ -78,4 +80,6 @@
     }
   }
 
-  
+  .sidenav .dropdownContainer a {
+    font-size: medium;
+  }

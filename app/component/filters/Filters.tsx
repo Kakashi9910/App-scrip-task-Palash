@@ -28,9 +28,9 @@ export default function Filters() {
                 onClick={() => toggleDropdown(2)}
             >
                 Ideal for
-                <span style={{ marginLeft: '70%' }}>
+                {/* <span style={{ marginLeft: '70%' }}>
                     <FontAwesomeIcon icon={faCaretDown} />
-                </span>
+                </span> */}
             </button>
 
             {activeDropdowns.includes(2) && (
@@ -52,9 +52,9 @@ export default function Filters() {
                 onClick={() => toggleDropdown(0)}
             >
                 Category
-                <span style={{ marginLeft: '70%' }}>
+                {/* <span style={{ marginLeft: '70%' }}>
                     <FontAwesomeIcon icon={faCaretDown} />
-                </span>
+                </span> */}
             </button>
             {activeDropdowns.includes(0) && (
                 <div className={styles.dropdownContainer}>
@@ -71,9 +71,9 @@ export default function Filters() {
                 onClick={() => toggleDropdown(1)}
             >
                 Price
-                <span style={{ marginLeft: '70%' }}>
+                {/* <span style={{ marginLeft: '70%' }}>
                     <FontAwesomeIcon icon={faCaretDown} />
-                </span>
+                </span> */}
             </button>
             {activeDropdowns.includes(1) && (
                 <div className={styles.dropdownContainer}>
@@ -89,9 +89,9 @@ export default function Filters() {
                 onClick={() => toggleDropdown(2)}
             >
                 Brand
-                <span style={{ marginLeft: '70%' }}>
+                {/* <span style={{ marginLeft: '70%' }}>
                     <FontAwesomeIcon icon={faCaretDown} />
-                </span>
+                </span> */}
             </button>
             {activeDropdowns.includes(2) && (
                 <div className={styles.dropdownContainer}>
