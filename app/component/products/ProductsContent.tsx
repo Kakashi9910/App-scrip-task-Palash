@@ -10,7 +10,7 @@ export default  function Products ({hideFilter,productData}:{hideFilter:boolean,
             <div key={index} >
                 <img style={{width:'80%',height:'80%'}} src={product.image} alt="" />
                 <div>
-                    <p>{product.title}</p>
+                    <p className={styles.title}>{product.title}</p>
                     <p>Sign in in or create an account an account to see pricing</p>
                 </div>
             </div>
