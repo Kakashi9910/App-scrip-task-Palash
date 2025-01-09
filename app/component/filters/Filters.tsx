@@ -22,17 +22,16 @@ export default function Filters() {
     return (
         <div className={styles.sidenav}>
             {/* <a href="#about">About</a> */}
-            <div style={{display:'flex',alignItems:'center'}}>
-            <button className={`${styles.dropdownBtn} ${activeDropdowns.includes(2) ? styles.active : ""}`}
-                onClick={() => toggleDropdown(2)}>
-                Ideal for
-                {/* <i className="fa fa-caret-down"></i> */}
 
-            </button>
-            <span >
+            <button
+                className={`${styles.dropdownBtn} ${activeDropdowns.includes(2) ? styles.active : ""}`}
+                onClick={() => toggleDropdown(2)}
+            >
+                Ideal for
+                <span style={{ marginLeft: '70%' }}>
                     <FontAwesomeIcon icon={faCaretDown} />
-            </span>
-            </div>
+                </span>
+            </button>
 
             {activeDropdowns.includes(2) && (
                 <div className={styles.dropdownContainer}>
@@ -47,7 +46,7 @@ export default function Filters() {
             <a href="#contact">Contact</a>
 
             {/* Dropdown 1 */}
-            
+
             <button
                 className={`${styles.dropdownBtn} ${activeDropdowns.includes(0) ? styles.active : ""}`}
                 onClick={() => toggleDropdown(0)}
@@ -59,9 +58,10 @@ export default function Filters() {
             </button>
             {activeDropdowns.includes(0) && (
                 <div className={styles.dropdownContainer}>
-                    <a href="#">Electronics</a>
-                    <a href="#">Fashion</a>
-                    <a href="#">Home Appliances</a>
+                    <a href="#">All</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Baby & Kids</a>
                 </div>
             )}
 
@@ -71,8 +71,8 @@ export default function Filters() {
                 onClick={() => toggleDropdown(1)}
             >
                 Price
-                <span style={{marginLeft:'70%'}}>
-                <FontAwesomeIcon  icon={faCaretDown}/>
+                <span style={{ marginLeft: '70%' }}>
+                    <FontAwesomeIcon icon={faCaretDown} />
                 </span>
             </button>
             {activeDropdowns.includes(1) && (
@@ -89,8 +89,8 @@ export default function Filters() {
                 onClick={() => toggleDropdown(2)}
             >
                 Brand
-                <span style={{marginLeft:'70%'}}>
-                <FontAwesomeIcon  icon={faCaretDown}/>
+                <span style={{ marginLeft: '70%' }}>
+                    <FontAwesomeIcon icon={faCaretDown} />
                 </span>
             </button>
             {activeDropdowns.includes(2) && (
