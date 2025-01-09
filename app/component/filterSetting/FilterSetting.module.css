@@ -58,3 +58,23 @@
   .dropdown:hover .dropdownContent {
     display: block;
   }
+
+  .filterTab {
+    display: none;
+    width:170px;
+    margin-right:20px;
+    padding: 10px
+  }
+
+  @media screen and (max-width: 768px) {
+    .hideFilterTab {
+      display: none;
+    }
+    .filterTab {
+      display: block;
+    }
+    .tab {
+      display: none;
+    }
+  }
+

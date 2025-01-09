@@ -6,6 +6,7 @@ export default function FilterSetting({setHideFilter}:{setHideFilter:any}) {
     
     return <div className={styles.filterSetting} >
         <div className={styles.tab}>Item Count</div>
+        <div className={styles.filterTab}>Filter</div>
         <div className={styles.hideFilterTab} onClick={()=>setHideFilter((prev:boolean) => !prev) }> <p className={styles.hideFilterTabPara}>Hide Filter</p></div>
         <div className={styles.dropdown} ><button className={styles.dropbtn}>Recommended</button>
             <div className={styles.dropdownContent}>
