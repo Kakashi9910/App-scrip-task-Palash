@@ -1,4 +1,5 @@
 import Discover from "./component/discover/Discover"
+import Footer from "./component/footer/Footer"
 import Header from "./component/header/Header"
 import MainContent from "./component/mainContent/MainContent"
 import axios from "axios"
@@ -10,5 +11,6 @@ export default async function Home() {
     <Header/>
     <Discover/>
     <MainContent productData={productData}/>
+    <Footer/>
   </>
 }
