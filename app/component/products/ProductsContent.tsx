@@ -11,9 +11,9 @@ export default function Products({ hideFilter, productData }: { hideFilter: bool
                 <Image
                     src={product.image}
                     alt="product"
-                    width={500}  
-                    height={500} 
-                    style={{ width: '80%', height: 'auto' }}
+                    width={300}  
+                    height={400} 
+                    style={{ objectFit:'cover' }}
                 />
                 <div>
                     <p className={styles.title}>{product.title}</p>
