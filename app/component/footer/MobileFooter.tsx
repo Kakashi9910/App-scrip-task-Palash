@@ -104,7 +104,6 @@ export default function MobileFooter() {
                     <Image src="/images/paypal.png" alt="PayPal" width={40} height={25} />
                     <Image src="/images/amex.png" alt="American Express" width={40} height={25} />
                     <Image src="/images/apple-pay.png" alt="Apple Pay" width={40} height={25} />
-                    <Image src="/images/shop-pay.png" alt="Shop Pay" width={40} height={25} />
                 </div>
             </div>
     

@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart, faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 export default function Header() {
     return (
         <header className={styles.header}>
@@ -43,6 +44,19 @@ export default function Header() {
                         </li>                        
                         <li>
                             <div>Contact</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div className={styles.mobLowerHeader}>
+            <nav className={styles.nav}>
+                    <ul>
+                        <li>
+                            <Link href="/">HOME</Link>
+                        </li>
+                        <li className={styles.separator}>|</li>
+                        <li>
+                            <Link href="/">SHOP</Link>
                         </li>
                     </ul>
                 </nav>

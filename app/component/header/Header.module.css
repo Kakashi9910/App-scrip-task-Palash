@@ -24,6 +24,10 @@
     justify-content: center;
     margin-top: 20px;
   }
+
+  .mobLowerHeader {
+    display: none;
+  }
   
   /* Logo styles */
   .logo a {
@@ -100,4 +104,40 @@
   .icon:hover {
     color: #0070f3;
   }
+
+  @media (max-width: 768px) {
+    .lowerHeader {
+     display: none; 
+    }
+    .mobLowerHeader {
+      display: block;
+      padding: 3px;
+
+    }
+    .nav ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 8px;
+  }
   
+  .nav li {
+      font-size: 14px;
+  }
+  
+  .nav a {
+      color: #666;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+      color: #000;
+  }
+  
+  .separator {
+      color: #666;
+  }
+  }
