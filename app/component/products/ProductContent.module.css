@@ -58,7 +58,11 @@
 
   @media screen and (max-width: 768px) {
     .gridContainer {
-      grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+      /* grid-template-columns: repeat(2, 1fr); 3 equal columns */
+      display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* This ensures equal column widths */
+        gap: 10px;
+        width: 100%;
     }
     .imageContainer {
       max-width: 300px;

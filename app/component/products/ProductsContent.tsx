@@ -7,30 +7,7 @@ export default function Products({ hideFilter, productData }: { hideFilter: bool
 
     return <div className={style}>
         {productData.map((product: any, index: number) => (
-            // <div key={index} className={styles.imageContainer}>
-            //     <Image
-            //         src={product.image}
-            //         alt="product"
-            //         width={350}
-            //         height={350}
-            //         style={{ objectFit: 'cover' }}
-            //     />
 
-            // </div>
-            // <div key={index} className={styles.imageContainer}>
-            //     <Image
-            //         src={product.image}
-            //         alt="product"
-            //         width={0}
-            //         height={0}
-            //         sizes="(max-width: 768px) 300px, 400px"
-            //         className={styles.productImage}
-            //     />
-            //     <div>
-            //         <p className={styles.title}>{product.title}</p>
-            //         <p>Sign in in or create an account an account to see pricing</p>
-            //     </div>
-            // </div>
             <div key={index} className={styles.imageContainer}>
             <div className={styles.imageWrapper}>
                 <Image
